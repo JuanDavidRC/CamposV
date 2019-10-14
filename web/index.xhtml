@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Digita la Informacion</title>
+    </h:head>
+    
+    <h:body>
+       
+        <h:form>
+      
+            
+                <h1>Ingresar la informacion</h1>
+                Nombre: <h:inputText value="#{controladorNavegacion.nombre}"></h:inputText>
+                <br></br><br></br>
+                Apellido <h:inputText value="#{controladorNavegacion.apellido}"></h:inputText>
+                <br></br><br></br> 
+                 
+                 PROFESION:<h:selectOneMenu value ="#{controladorNavegacion.profesion}">
+                <f:selectItem itemValue="Ingeniero" itemLabel="Ingeniero"/>
+                <f:selectItem itemValue="Tecnologo" itemLabel="Tecnologo"/>
+                <f:selectItem itemValue="Tecnico" itemLabel="Tecnico"/>
+                <f:selectItem itemValue="Auxiliar" itemLabel="Auxiliar"/>
+                </h:selectOneMenu>
+                 <br></br><br></br> 
+                GENERO:<h:selectOneRadio value ="#{controladorNavegacion.genero}">
+                <f:selectItem itemValue="F" itemLabel="Mujer"/>
+                <f:selectItem itemValue="M" itemLabel="Hombre"/>
+                <f:selectItem itemValue="O" itemLabel="Otro"/>
+                </h:selectOneRadio>
+                <br></br><br></br> 
+                
+                Idioma Aplicado:<h:selectManyCheckbox value="#{controladorNavegacion.idioma}"> 
+                        <f:selectItem itemValue="ingles" itemLabel="Ingles" />
+                        <f:selectItem itemValue="frances" itemLabel="Frances" />
+                        <f:selectItem itemValue="aleman" itemLabel="Aleman" />                                              
+                </h:selectManyCheckbox> 
+                <br></br>
+                 UBICACION:<h:selectOneRadio value ="#{controladorNavegacion.ubicacion}">
+                <f:selectItem itemValue="Facatativa" itemLabel="Facatativa"/>
+                <f:selectItem itemValue="Afueras" itemLabel="Afueras"/>
+                </h:selectOneRadio>
+                <br></br><br></br> 
+                Dias Trabajados: <h:inputText   value="#{controladorNavegacion.diastrabajados}"></h:inputText>
+                <br></br><br></br> 
+                
+                
+                
+                
+                <h:commandButton type="submit" value="Enviar Datos" action="datos.xhtml" >
+                </h:commandButton>
+            
+        </h:form>
+    </h:body>
+</html>
+

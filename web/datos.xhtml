@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <h:head>
+        
+        <title>DATOS</title>
+    </h:head>
+    <h:body>
+        <h1>Datos Recibidos </h1>
+        
+        <td>
+            <h3>Señor@</h3>
+                <h:outputText id="outGenero" value="#{mostrar.controlador.nombre}     "/>   
+                <h:outputText id="outApellido" value="#{mostrar.controlador.apellido}     "/> 
+        </td>
+       
+        <td>
+            <h3>Profesion</h3>
+            <h:outputText id="outProfesion" value="#{mostrar.controlador.profesion}"/>
+        </td>
+        <td>
+             <h3>Idiomas</h3>
+             <h:outputText id="outIdiomas" value="#{mostrar.controlador.idioma}     "/>
+           
+        </td>
+        <td>
+             <h3>Ubicacion</h3>
+             <h:outputText id="outUbicacion" value="#{mostrar.controlador.ubicacion}     "/>
+           
+        </td>
+         <td>
+             <h3>Dias de trabajo</h3>
+             <h:outputText id="outDias" value="#{mostrar.controlador.diastrabajados}    "/>         
+        </td>
+         <td>
+             <h3>Cuenta</h3>
+            
+             
+        </td>
+          
+        
+    </h:body>
+</html>
